@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Character Counter</title>
+</head>
+
+<body>
+    <u>
+        <h2>Live Character Counter</h2>
+    </u>
+    <textarea id="inputText" rows="10" cols="50" oninput="live()"></textarea>
+    <p>Total Characters: <span id="c"></span></p>
+</body>
+<script>
+    function live() {
+        let ta = document.getElementById('inputText').value.length;
+        document.getElementById('c').innerText = ta;
+    }
+
+</script>
+
+</html>

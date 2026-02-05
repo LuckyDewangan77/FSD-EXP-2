@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Live Character Counter</title>
+    </head>
+    <h1>Live Character Counter</h1>
+    <textarea id="inputText" rows="10" cols="50"></textarea>
+    <p>Total Characters: <span id="c"></span>
+        <script>
+            let textarea = document.getElementById("inputText");
+            textarea.addEventListener("input", ()=> {
+                let characters = textarea.value.length;
+                document.getElementById("c").innerText = characters;
+            });
+        </script>
+        </body>
+</html>
